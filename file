@@ -1,0 +1,116 @@
+// import { Button } from "@/components/ui/button";
+// import {
+//   DropdownMenu,
+//   DropdownMenuContent,
+//   DropdownMenuLabel,
+//   DropdownMenuSeparator,
+//   DropdownMenuTrigger,
+// } from "@/components/ui/dropdown-menu";
+
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
+// import { Label } from "@/components/ui/label";
+// import { LockKeyhole, User, User2 } from "lucide-react";
+// import DropDownItems from "./DropDownItems";
+// import { Input } from "@/components/ui/input";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
+// import CustomSelectItem from "./CustomSelectItem";
+
+// function LoginCard() {
+//   return (
+//     <div className="flex-col justify-center h-1/2 bg-red-400 ">
+//       <div className="flex gap-2 items-center">
+//         <User2 className="h-6 w-5" />
+//         {/* <DropdownMenu modal={false}>
+//           <DropdownMenuTrigger asChild> */}
+//             <Select>
+//               <SelectTrigger onClick={()=>console.log('opened')} >
+//                 <SelectValue placeholder="Choose your account" />
+//               </SelectTrigger>
+//               <SelectContent>
+//                 {/* <DropdownMenuContent className="overflow-auto">
+//                   <div className="flex items-center">
+//                     <User className="h-4 w-4" />
+//                     <DropdownMenuLabel>Accounts</DropdownMenuLabel>
+//                   </div>
+//                   <DropdownMenuSeparator className="w-64" />
+//                   <DropDownItems />
+//                 </DropdownMenuContent> */}
+//               </SelectContent>
+//             </Select>
+//           {/* </DropdownMenuTrigger>
+//         </DropdownMenu> */}
+//       </div>
+//       <div className="flex items-center gap-2">
+//         <LockKeyhole className="h-6 w-5 text-gray-700" />
+//         <Input type="password" placeholder="Enter password" className="w-1/2" />
+//       </div>
+//     </div>
+//   );
+//   //   return (
+//   //     <div>
+//   //       <Card className="w-full">
+//   //         <CardHeader>
+//   //           <CardTitle>Sing in</CardTitle>
+//   //           <CardDescription>Please login your account</CardDescription>
+//   //         </CardHeader>
+//   //         <CardContent>
+//   //           <form action="">
+//   //             <div>
+//   //               <div>
+//   //                 <Label htmlFor="name">Name</Label>
+//   //                 <Select>
+//   //                   <SelectTrigger id="framework">
+//   //                     <SelectValue placeholder="Choose your account" />
+//   //                   </SelectTrigger>
+//   //                   <SelectContent>
+//   //                     <CustomSelectItem />
+//   //                   </SelectContent>
+//   //                 </Select>
+//   //               </div>
+//   //             </div>
+//   //           </form>
+//   //         </CardContent>
+//   //       </Card>
+//   //     </div>
+//   //   );
+//   // }
+//   /* <div className="flex-col justify-center h-1/2 bg-red-400 ">
+//       <div className="flex gap-2 items-center">
+//         <User2 className="h-6 w-5" />
+//         <DropdownMenu modal={false}>
+//           <DropdownMenuTrigger asChild>
+//             <Button variant="outline" className=" ">
+//               Click here to choose your account
+//             </Button>
+//           </DropdownMenuTrigger>
+//           <DropdownMenuContent className="overflow-auto">
+//             <div className="flex items-center">
+//               <User className="h-4 w-4" />
+//               <DropdownMenuLabel>Accounts</DropdownMenuLabel>
+//             </div>
+//             <DropdownMenuSeparator className="w-64" />
+//             <DropDownItems />
+//           </DropdownMenuContent>
+//         </DropdownMenu>
+//       </div>
+//       <div className="flex items-center gap-2">
+//         <LockKeyhole className="h-6 w-5 text-gray-700"/>
+//         <Input type="password" placeholder="Enter password" className="w-1/2" />
+//       </div>
+//     </div> */
+//   //   );}
+// }
+// export default LoginCard;

@@ -1,0 +1,74 @@
+// "use client";
+
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import { ArrowBigDown, ChevronDown, User2 } from "lucide-react";
+
+import DropDownItems from "./DropDownItems";
+
+function LoginCard() {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className=" ">Sing in</CardTitle>
+        <CardDescription>Please login your account</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div>
+          <div>
+            <div className="flex items-center ">
+              <User2 className="h-4 w-6" />
+              <Label>username</Label>
+            </div>
+            <DropdownMenu modal={false}>
+              <DropdownMenuTrigger asChild>
+                <div className="flex w-2/3 px-2 items-center border justify-evenly rounded-lg">
+                  <Avatar className=" h-8 w-8">
+                    {/* <AvatarImage src={`./${user.image}`} /> */}
+                    <AvatarFallback>{"M"}</AvatarFallback>
+                  </Avatar>
+                  <Input
+                    placeholder="Choose user"
+                    className="border-none rounded-none flex-1"
+                  />
+                  <ChevronDown />
+                </div>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator className="w-64" />
+                {/* <DropDownItems /> */}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+export default LoginCard;
