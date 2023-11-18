@@ -4,22 +4,19 @@ import {
   CommandEmpty,
   CommandGroup,
   CommandInput,
-  CommandItem,
   CommandList,
-  CommandSeparator,
-  CommandShortcut,
 } from "@/components/ui/command";
-import CommanItem from "./CommanItem";
+import ListItem from "./CommanItem";
 
 function CommandSearch() {
   return (
-    <div className="flex">
-      <Command className="rounded-lg border shadow-md">
+    <div>
+      <Command className="rounded-lg border shadow-sm ">
         <CommandInput placeholder="Search costumers by their names or contacts ..." />
         <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandEmpty>No customer found...</CommandEmpty>
           <CommandGroup heading="Customers">
-            <CommanItem />
+            <ListItem />
           </CommandGroup>
         </CommandList>
       </Command>

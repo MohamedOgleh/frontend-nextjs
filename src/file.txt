@@ -1,0 +1,33 @@
+import React, { ReactNode } from "react";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import {
+  Banknote,
+  FilePlus2,
+  History,
+  Home,
+  AlignEndHorizontal,
+} from "lucide-react";
+
+
+interface SideBarItems {
+  title: String;
+  icon: ReactNode;
+}
+
+const items: SideBarItems[] = [
+  { title: "Home", icon: <Home /> },
+  { title: "Registration", icon: <FilePlus2 /> },
+  { title: "Payments", icon: <Banknote /> },
+  { title: "History", icon: <History /> },
+  { title: "Reports", icon: <AlignEndHorizontal /> },
+];
