@@ -1,37 +1,22 @@
-import React from "react";
-import { Menu, Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Roboto } from "next/font/google";
-const roboto = Roboto({ subsets: ["latin"], weight: "700" });
+// import { MenuIcon } from "lucide-react";
+import React, { ReactNode } from "react";
+import { TopBarItems } from "@/models/MenuItems";
+import { Aladin } from "next/font/google";
+import { Label } from "@/components/ui/label";
+import Image from "next/image";
+const aladin = Aladin({ subsets: ["latin"], weight: "400" });
 
 function TopBar() {
   return (
-    <div className="bg-blue-400 h-[70px] flex items-center justify-between">
-      <div>
-        <div
-          className={`${roboto.className} flex text-2xl items-center gap-2 ml-4`}
-        >
-          <Menu className="text-3xl text-white" />
-          <h1>TOGDHEER</h1>
-          <span className="text-red-500 ">
-            <h1>GYM</h1>
-          </span>
-        </div>
+    <div className="p-4" >
+      {/* logo */}
+      <div className={`${aladin.className} flex items-center gap-2`}>
+        <Image src="/transparent_logo.png" alt="logo" width={54} height={54} />
+        <Label className="text-3xl text-[#206187] ">TOGDHEER</Label>
+        <span>
+          <Label className="text-3xl text-[#ef2d48]">GYM</Label>
+        </span>
       </div>
-      {/* center-search */}
-      <div className="flex">
-        <Input
-          type="email"
-          placeholder="Search"
-          className="rounded-r-none w-72 focus-visible:border-none"
-        />
-        <Button size="icon" role="combobox" className="rounded-l-none hover:bg-blue-500 ">
-          <Search />
-        </Button>
-      </div>
-      {/* right-side */}
-      <div></div>
     </div>
   );
 }
