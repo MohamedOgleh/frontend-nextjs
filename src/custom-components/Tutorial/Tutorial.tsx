@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import React, { useEffect, useState } from "react";
 import {
   Command,
@@ -11,8 +11,8 @@ import {
   CommandShortcut,
 } from "@/components/ui/command";
 import { Calendar, Smile, Calculator, Badge } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
-import { Label } from "@radix-ui/react-label";
+
+// import { Label } from "@radix-ui/react-label";
 import Profile from "./Profile";
 
 function Tutorial() {
@@ -20,7 +20,7 @@ function Tutorial() {
 
   return (
     <div className="h-screen flex justify-center items-center  ">
-      {/* <Profile/> */}
+      <Profile/>
       {/* <div className="transition ease-out duration-1000  max-h-9">
         <Command className="rounded-lg border shadow-md">
           <CommandInput

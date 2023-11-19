@@ -11,7 +11,7 @@ const aladin = Aladin({ subsets: ["latin"], weight: "400" });
 
 function TopBar() {
   return (
-    <div className="flex items-center py-4 px-8 max-h-20 bg-[#e5f4fb] gap-12">
+    <div className="flex items-center py-4 px-8  max-h-20 bg-[#e5f4fb] gap-12">
       {/* logo */}
       <div className={`${aladin.className} flex items-center gap-2`}>
         <Image src="/transparent_logo.png" alt="logo" width={54} height={54} />

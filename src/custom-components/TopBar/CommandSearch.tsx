@@ -1,3 +1,4 @@
+// "use client";
 import React from "react";
 import {
   Command,
@@ -7,6 +8,7 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import ListItem from "./CommanItem";
+import { Toggle } from "@/components/ui/toggle";
 
 function CommandSearch() {
   return (

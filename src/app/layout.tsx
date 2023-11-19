@@ -6,6 +6,8 @@ import SideBar from "@/custom-components/SideBar";
 import { Menu, MenuIcon } from "lucide-react";
 import { ReactNode } from "react";
 import TopBar from "@/custom-components/TopBar/TopBar";
+import Tutorial from "@/custom-components/Tutorial/Tutorial";
+import TopBar2 from "@/custom-components/TopBar2/TopBar2";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
@@ -16,19 +18,18 @@ interface MenuIcon {
   icon: ReactNode;
 }
 
-const menu: MenuIcon = {
-  icon: <Menu />,
-};
+ 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-[#e5f4fb]">
+    <html lang="en">
       {/* <SideBar /> */}
-      <body>
-        <TopBar />
+      <body className="bg-[#e5f4fb]">
+        <TopBar2 />
+        {/* <Tutorial/> */}
         {children}
       </body>
     </html>
