@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import SideBar from "@/custom-components/SideBar";
+
 // import TopBar from "@/custom-components/TopBar";
 import { Menu, MenuIcon } from "lucide-react";
 import { ReactNode } from "react";
 import TopBar from "@/custom-components/TopBar/TopBar";
 import Tutorial from "@/custom-components/Tutorial/Tutorial";
 import TopBar2 from "@/custom-components/TopBar2/TopBar2";
+import SideBar from "@/custom-components/SideBar/SideBar";
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
       {/* <SideBar /> */}
       <body className="bg-[#e5f4fb]">
         <TopBar2 />
+        <SideBar/>
         {/* <Tutorial/> */}
         {children}
       </body>

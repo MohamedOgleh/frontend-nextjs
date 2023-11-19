@@ -10,17 +10,49 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
-import { Calendar, Smile, Calculator, Badge } from "lucide-react";
 
-// import { Label } from "@radix-ui/react-label";
-import Profile from "./Profile";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
+
+// import { Calendar, Smile, Calculator, Badge } from "lucide-react";
+
+// // import { Label } from "@radix-ui/react-label";
+// import Profile from "./Profile";
+import { Smile } from "lucide-react";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 function Tutorial() {
   const [toggle, setToggle] = useState(true);
 
   return (
     <div className="h-screen flex justify-center items-center  ">
-      <Profile/>
+      <NavigationMenu>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <Smile />
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+
+      {/* <Profile/> */}
       {/* <div className="transition ease-out duration-1000  max-h-9">
         <Command className="rounded-lg border shadow-md">
           <CommandInput
